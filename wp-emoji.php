@@ -7,7 +7,7 @@
  * Requires PHP:        7.4
  * Requires at least:   6.0.2
  * Author:              Ratul Hasan
- * Author URI:          https://ratuljh.wordpress.com/
+ * Author URI:          https://ratulhasan.com
  * License:             GPL-2.0-or-later
  * License URI:         https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:         wp-emoji
@@ -21,6 +21,9 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit();
 }
 
+/**
+ * Main class
+ */
 final class WpEmoji{
 
     /**
@@ -89,8 +92,14 @@ final class WpEmoji{
 
 }
 
+/**
+ * Main entry point for WpEmoji plugin.
+ *
+ * @return bool|\WpEmoji
+ */
 function hit_start(){
     return WpEmoji::init();
 }
 
+// Hit start the plugin.
 hit_start();
