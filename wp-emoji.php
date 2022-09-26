@@ -57,8 +57,6 @@ final class WpEmoji{
     /**
      * Remove all hooks to disable emoji which WordPress treats like an image.
      *
-     * @since WORKPLACE_SINCE
-     *
      * @return void
      */
     public function disable_emojis() {
